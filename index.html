@@ -39,23 +39,23 @@
   <aside class="z-50  h-screen w-1/5 flex flex-col items-center border-r border-gray-600 py-8 space-y-8 sticky top-0 bg-red-950 bg-[linear-gradient(140deg,black_40%,transparent)] ">
     <!-- Profile Image -->
     <div>
-      <img class="w-44 h-44 rounded-full border-8 border-red-600 mx-auto" src="./img/Jahid nav.jpg" alt="Profile">
+      <img class="w-44 h-44 rounded-full border-8 border-red-950 mx-auto" src="./img/Jahid nav.jpg" alt="Profile">
     </div>
     <!-- Navigation Menu -->
     <nav>
-      <ul class="flex flex-col space-y-2 text-center font-medium text-white">
+      <ul class="flex flex-col space-y-2 text-center font-medium text-gray-400">
         <li class="cursor-pointer flex items-center gap-2 pr-20 font-semibold text-red-600 duration-1000 rounded-md p-1"><i class="fa-solid fa-house"></i> Home</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-user"></i> About</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-file"></i> Resume</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-briefcase"></i> Portfolio</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-tags"></i> Pricing</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-users"></i> Clients</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-envelope"></i> Contact</li>
+        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-user text-red-600"></i> About</li>
+        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-file text-red-600"></i> Resume</li>
+        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-briefcase text-red-600"></i> Portfolio</li>
+        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-tags text-red-600"></i> Pricing</li>
+        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-users text-red-600"></i> Clients</li>
+        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-envelope text-red-600"></i> Contact</li>
       </ul>
     </nav>
     <!-- Social Icons -->
-    <div class="mt-auto text-center">
-      <p class="font-semibold mb-2 text-lg text-white border-t-2 border-red-600 pt-5">Find With Me</p>
+    <div class="mt-auto text-start">
+      <p class="font-semibold mb-2 text-lg text-gray-400 border-t-2 border-gray-600 pt-5">Find With Me</p>
       <div class="flex justify-center space-x-4 text-2xl">
         <a href="#" class="text-blue-700 hover:text-blue-900 transition"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#" class="text-pink-500 hover:text-pink-700 transition"><i class="fa-brands fa-instagram"></i></a>
@@ -70,10 +70,11 @@
 
   <!-- Main content section -->
   <main class="flex-1 bg-gray-100">
+  <!--Hero Section Start-->
    <section class="hero text-white flex" id="hero">
-    <div class="container mx-auto flex flex-col md:flex-row items-center p-8 gap-8">
+    <div class="w-[90%] container mx-auto flex flex-col md:flex-row items-center gap-8">
     <!-- Left Side -->
-    <div class="flex-1 space-y-4  pl-10">
+    <div class="flex-1 space-y-4">
       <p class="font-semibold uppercase">Hello</p>
       <h2 class="font-semibold text-5xl md:text-6xl">I'm Jahidul Islam</h2>
       <p class="font-semibold text-2xl md:text-4xl">
@@ -83,24 +84,56 @@
         A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth. It serves as
       </p>
       <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-lg inline-flex items-center gap-2">
+        <i class="fa-solid fa-arrow-right show"></i>
         <span>View Portfolio</span>
-        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-right hide"></i>
       </button>
     </div>
     <!-- Right Side -->
     <div class="flex-1 flex flex-col items-center relative ">
-      <img class="md:w96 w-[499px] z-10" src="./img/banner-user-image-02.png" alt="Jahidul Islam">
+      <img class="w-[470px] z-10" src="./img/banner-user-image-02.png" alt="Jahidul Islam">
       <h2 class="uppercase text-3xl md:text-7xl font-extrabold absolute bottom-0 -translate-y-20 translate-x-4 top-52 up-down duration-1000">
         Web Designer
       </h2>
-      <h2 class="uppercase text-3xl md:text-7xl font-extrabold absolute bottom-20 -translate-y-20 text-transparent outline-text -translate-x-4 z-20 up-down">
+      <h2 class="uppercase text-3xl md:text-7xl font-extrabold absolute bottom-20 -translate-y-20 text-transparent outline-text -translate-x-4 z-20 up-down duration-1000">
         Web Designer
       </h2>
     </div>
     </div>
   </section>
+  <!--Hero Section End-->
+
+    <!--Service Section Start-->
+    <section class="py-20 bg-black text-white ">
+      <div class="w-[90%] mx-auto grid grid-flow-col grid-rows-3 gap-5">
+        <div class="bg-[#141414] rounded-3xl p-5 service">
+          <h2 class="font-bold text-2xl py-2">01. Success Arhitects</h2>
+          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+        </div>
+        <div class="bg-[#141414] rounded-3xl p-5 service">
+          <h2 class="font-bold text-2xl py-2">02. Graphics Design</h2>
+          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+        </div>
+        <div class="bg-[#141414] rounded-3xl p-5 service">
+          <h2 class="font-bold text-2xl py-2">03. Ui/Visual Design</h2>
+          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+        </div>
+        <div class="bg-[#141414] rounded-3xl p-5 service">
+          <h2 class="font-bold text-2xl py-2">04. Branding Design</h2>
+          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+        </div>
+        <div class="bg-[#141414] rounded-3xl p-5 service">
+          <h2 class="font-bold text-2xl py-2">05. Web Design</h2>
+          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+        </div>
+        <div class="bg-[#141414] rounded-3xl p-5 service">
+          <h2 class="font-bold text-2xl py-2">06. Motion Design</h2>
+          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+        </div>
+      </div>
+    </section>
+    <!--Service Section End-->
 
   </main>
-  </secion>
 </body>
 </html>
