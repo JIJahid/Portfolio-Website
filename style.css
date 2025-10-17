@@ -21,7 +21,6 @@
   visibility: visible;
 }
 
-
 .hero{
     background-image: url(./img/banner-background-one.jpg);
     background-position: center;
@@ -30,6 +29,9 @@
     width: 100%;
 }
 
+.hero-img{
+  margin-top: -80px;
+}
 
 @keyframes bounce {
     0%, 100% {
@@ -56,4 +58,47 @@
 
 .service:hover {
   border-color: red;
+}
+
+
+
+/*****/
+.experience{
+   background-image: url(./img/jahid-book.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 370px;
+    width: 100%;
+}
+/*****/
+
+
+
+
+.contact-main{
+justify-content: center !important;
+align-items: center !important;
+}
+
+.contact{
+  justify-content: end !important;
+  text-align: center;
+}
+.contact input{
+  background: none;
+  width: 260px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.contact textarea{
+  background: none;
+  width: 545px;
+  height: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
 }

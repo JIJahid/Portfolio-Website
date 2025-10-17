@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!--Font awsome icon-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,214 +35,512 @@
     };
   </script>
 </head>
+
 <body class="font-rajdhani bg-gray-50">
-  
+
   <secion class="Full-body-section flex">
-  <!-- Sidebar / Nav section start -->
-  <aside class="z-50  h-screen w-1/5 flex flex-col items-center border-r border-gray-600 py-8 space-y-8 sticky top-0 bg-red-950 bg-[linear-gradient(140deg,black_40%,transparent)] ">
-    <!-- Profile Image -->
-    <div>
-      <img class="w-44 h-44 rounded-full border-8 border-red-950 mx-auto" src="./img/Jahid nav.jpg" alt="Profile">
-    </div>
-    <!-- Navigation Menu -->
-    <nav>
-      <ul class="flex flex-col space-y-2 text-center font-medium text-gray-400">
-        <li class="cursor-pointer flex items-center gap-2 pr-20 font-semibold text-red-600 duration-1000 rounded-md p-1"><i class="fa-solid fa-house"></i> Home</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-user text-red-600"></i> About</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-file text-red-600"></i> Resume</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-briefcase text-red-600"></i> Portfolio</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-tags text-red-600"></i> Pricing</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-users text-red-600"></i> Clients</li>
-        <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i class="fa-solid fa-envelope text-red-600"></i> Contact</li>
-      </ul>
-    </nav>
-    <!-- Social Icons -->
-    <div class="mt-auto text-start">
-      <p class="font-semibold mb-2 text-lg text-gray-400 border-t-2 border-gray-600 pt-5">Find With Me</p>
-      <div class="flex justify-center space-x-4 text-2xl">
-        <a href="#" class="text-blue-700 hover:text-blue-900 transition"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" class="text-pink-500 hover:text-pink-700 transition"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="text-blue-400 hover:text-blue-600 transition"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" class="text-blue-800 hover:text-blue-900 transition"><i class="fa-brands fa-facebook"></i></a>
+    <!-- Sidebar / Nav section start -->
+    <aside
+      class="z-50  h-screen w-[15%] flex flex-col items-center border-r border-gray-600 py-8 space-y-8 sticky top-0 bg-red-950 bg-[linear-gradient(140deg,black_40%,transparent)] ">
+      <!-- Profile Image -->
+      <div>
+        <img class="w-44 h-44 rounded-full border-4 border-red-950 mx-auto" src="./img/Jahid nav.jpg" alt="Profile">
       </div>
-    </div>
-  </aside>
-  <!-- Sidebar / Nav section End -->
-
-
-
-  <!-- Main content section -->
-  <main class="flex-1 bg-gray-100">
-  <!--Hero Section Start-->
-   <section class="hero text-white flex" id="hero">
-    <div class="w-[90%] container mx-auto flex flex-col md:flex-row items-center gap-8">
-    <!-- Left Side -->
-    <div class="flex-1 space-y-4">
-      <p class="font-semibold uppercase">Hello</p>
-      <h2 class="font-semibold text-5xl md:text-6xl">I'm Jahidul Islam</h2>
-      <p class="font-semibold text-2xl md:text-4xl">
-        A <span class="text-red-600 font-bold">Web Designer</span>
-      </p>
-      <p class="text-gray-300 max-w-md">
-        A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities and professional growth. It serves as
-      </p>
-      <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-lg inline-flex items-center gap-2">
-        <i class="fa-solid fa-arrow-right show"></i>
-        <span>View Portfolio</span>
-        <i class="fa-solid fa-arrow-right hide"></i>
-      </button>
-    </div>
-    <!-- Right Side -->
-    <div class="flex-1 flex flex-col items-center relative ">
-      <img class="w-[470px] z-10" src="./img/banner-user-image-02.png" alt="Jahidul Islam">
-      <h2 class="uppercase text-3xl md:text-7xl font-extrabold absolute bottom-0 -translate-y-20 translate-x-4 top-52 up-down duration-1000">
-        Web Designer
-      </h2>
-      <h2 class="uppercase text-3xl md:text-7xl font-extrabold absolute bottom-20 -translate-y-20 text-transparent outline-text -translate-x-4 z-20 up-down duration-1000">
-        Web Designer
-      </h2>
-    </div>
-    </div>
-  </section>
-  <!--Hero Section End-->
-
-  <!--Service Section Start-->
-    <section class="py-20 bg-black text-white">
-      <div class="w-[90%] mx-auto grid grid-flow-col grid-rows-3 gap-5">
-        <div class="bg-[#141414] rounded-3xl p-5 service">
-          <h2 class="font-bold text-2xl py-2">01. Success Arhitects</h2>
-          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
-        </div>
-        <div class="bg-[#141414] rounded-3xl p-5 service">
-          <h2 class="font-bold text-2xl py-2">02. Graphics Design</h2>
-          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
-        </div>
-        <div class="bg-[#141414] rounded-3xl p-5 service">
-          <h2 class="font-bold text-2xl py-2">03. Ui/Visual Design</h2>
-          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
-        </div>
-        <div class="bg-[#141414] rounded-3xl p-5 service">
-          <h2 class="font-bold text-2xl py-2">04. Branding Design</h2>
-          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
-        </div>
-        <div class="bg-[#141414] rounded-3xl p-5 service">
-          <h2 class="font-bold text-2xl py-2">05. Web Design</h2>
-          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
-        </div>
-        <div class="bg-[#141414] rounded-3xl p-5 service">
-          <h2 class="font-bold text-2xl py-2">06. Motion Design</h2>
-          <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="flex flex-col space-y-2 text-center font-medium text-gray-400">
+          <li
+            class="cursor-pointer flex items-center gap-2 pr-20 font-semibold text-red-600 duration-1000 rounded-md p-1">
+            <i class="fa-solid fa-house"></i> Home
+          </li>
+          <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
+              class="fa-solid fa-user text-red-600"></i> About</li>
+          <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
+              class="fa-solid fa-file text-red-600"></i> Resume</li>
+          <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
+              class="fa-solid fa-briefcase text-red-600"></i> Portfolio</li>
+          <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
+              class="fa-solid fa-tags text-red-600"></i> Pricing</li>
+          <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
+              class="fa-solid fa-users text-red-600"></i> Clients</li>
+          <li class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
+              class="fa-solid fa-envelope text-red-600"></i> Contact</li>
+        </ul>
+      </nav>
+      <!-- Social Icons -->
+      <div class="mt-auto text-start">
+        <p class="font-semibold mb-2 text-gray-400 border-t-2 border-gray-600 pt-5">Find With Me</p>
+        <div class="flex justify-center space-x-4 text-xl">
+          <a href="#" class="text-blue-700 hover:text-blue-900 transition"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="text-pink-500 hover:text-pink-700 transition"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-blue-400 hover:text-blue-600 transition"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-blue-800 hover:text-blue-900 transition"><i class="fa-brands fa-facebook"></i></a>
         </div>
       </div>
-    </section>
-  <!--Service Section End-->
+    </aside>
+    <!-- Sidebar / Nav section End -->
 
-  <!--Portfolio  Section Start-->
-    <section class="pb-10 bg-black text-white">
-      <div class="w-1/2 flex mx-auto text-center py-5">
-        <div>
-          <p class="text-red-600 font-semibold uppercase">Latest portfolio</p>
-          <h2 class="text-white text-5xl font-bold py-2">Transforming Ideas into Exceptional</h2>
-          <p class="text-gray-300">Business consulting consultants provide expert advice and guida businesses to help them improve their performance, efficiency, and organizational</p>
+
+
+    <!-- Main content section -->
+    <main class="flex-1 bg-gray-100">
+      <!--Hero Section Start-->
+      <section class="hero text-white flex" id="hero ">
+        <div class="w-[90%] container mx-auto flex flex-col md:flex-row items-center gap-8">
+          <!-- Left Side -->
+          <div class="flex-1 space-y-4">
+            <p class="font-semibold uppercase">Hello</p>
+            <h2 class="font-semibold text-5xl md:text-6xl">I'm Jahidul Islam</h2>
+            <p class="font-semibold text-2xl md:text-4xl">
+              A <span class="text-red-600 font-bold">Web Designer</span>
+            </p>
+            <p class="text-gray-300 max-w-md">
+              A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities
+              and professional growth. It serves as
+            </p>
+            <button
+              class="bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-lg inline-flex items-center gap-2">
+              <i class="fa-solid fa-arrow-right show"></i>
+              <span>View Portfolio</span>
+              <i class="fa-solid fa-arrow-right hide"></i>
+            </button>
+          </div>
+          <!-- Right Side -->
+          <div class="flex-1 flex flex-col items-center relative ">
+            <img class="w-[660px] z-10 hero-img" src="./img/Jahid-removebg-preview.png" alt="Jahidul Islam">
+            <h2
+              class="uppercase text-3xl md:text-6xl font-extrabold absolute bottom-0 -translate-y-20 translate-x-4 top-52 up-down duration-1000">
+              Web Designer
+            </h2>
+            <h2
+              class="uppercase text-3xl md:text-6xl font-extrabold absolute bottom-20 -translate-y-20 text-transparent outline-text -translate-x-4 z-20 up-down duration-1000">
+              Web Designer
+            </h2>
+          </div>
         </div>
-      </div>
-      <div class="w-[90%] mx-auto grid grid-cols-2 gap-5 py-5">
-<!--curd  div Start-->
-      <div class="group mx-auto">
-  <!-- Image -->
-      <div class="rounded-3xl border-2 border-[#ffffff14] bg-[#141414]  p-5">
-        <img class="w-full rounded-3xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-105" src="./img/portfoli-img-1.jpg" alt="Portfolio-Image">
-      </div>
-  <!-- Title + Icon -->
-      <div class="flex items-center justify-between py-5">
-        <span class="relative">
-          <h2 class="text-2xl font-semibold mt-3 relative pb-1">
-            Digital Transformation Advisors
-            <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
-          </h2>
-          <p class="text-gray-300">Development Coaches</p>
-        </span>
-        <span class=" border-2 border-[#ffffff14] p-2 rounded-lg inline-block overflow-hidden">
-              <i class="fa-solid fa-arrow-up-right-from-square text-2xl 
+      </section>
+      <!--Hero Section End-->
+
+      <!--Service Section Start-->
+      <section class="py-20 bg-black text-white">
+        <div class="w-[90%] mx-auto grid grid-flow-col grid-rows-3 gap-5">
+          <div class="bg-[#141414] rounded-3xl p-5 service">
+            <h2 class="font-bold text-2xl py-2">01. Success Arhitects</h2>
+            <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed
+              placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+          </div>
+          <div class="bg-[#141414] rounded-3xl p-5 service">
+            <h2 class="font-bold text-2xl py-2">02. Graphics Design</h2>
+            <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed
+              placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+          </div>
+          <div class="bg-[#141414] rounded-3xl p-5 service">
+            <h2 class="font-bold text-2xl py-2">03. Ui/Visual Design</h2>
+            <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed
+              placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+          </div>
+          <div class="bg-[#141414] rounded-3xl p-5 service">
+            <h2 class="font-bold text-2xl py-2">04. Branding Design</h2>
+            <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed
+              placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+          </div>
+          <div class="bg-[#141414] rounded-3xl p-5 service">
+            <h2 class="font-bold text-2xl py-2">05. Web Design</h2>
+            <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed
+              placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+          </div>
+          <div class="bg-[#141414] rounded-3xl p-5 service">
+            <h2 class="font-bold text-2xl py-2">06. Motion Design</h2>
+            <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed
+              placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+          </div>
+        </div>
+      </section>
+      <!--Service Section End-->
+
+      <!--Portfolio  Section Start-->
+      <section class="pb-10 bg-black text-white">
+        <div class="w-1/2 flex mx-auto text-center py-5">
+          <div>
+            <p class="text-red-600 font-semibold uppercase">Latest portfolio</p>
+            <h2 class="text-white text-5xl font-bold py-2">Transforming Ideas into Exceptional</h2>
+            <p class="text-gray-300">Business consulting consultants provide expert advice and guida businesses to help
+              them improve their performance, efficiency, and organizational</p>
+          </div>
+        </div>
+        <div class="w-[90%] mx-auto grid grid-cols-2 gap-5 py-5">
+          <!--curd  div Start-->
+          <div class="group mx-auto">
+            <!-- Image -->
+            <div class="rounded-3xl border-2 border-[#ffffff14] bg-[#141414]  p-5">
+              <img
+                class="w-full rounded-3xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-105"
+                src="./img/portfoli-img-1.jpg" alt="Portfolio-Image">
+            </div>
+            <!-- Title + Icon -->
+            <div class="flex items-center justify-between py-5">
+              <span class="relative">
+                <h2 class="text-2xl font-semibold mt-3 relative pb-1">
+                  Digital Transformation Advisors
+                  <span
+                    class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
+                </h2>
+                <p class="text-gray-300">Development Coaches</p>
+              </span>
+              <span class=" border-2 border-[#ffffff14] p-2 rounded-lg inline-block overflow-hidden">
+                <i class="fa-solid fa-arrow-up-right-from-square text-2xl 
             transition-colors duration-300 group-hover:text-red-500
             animate-bounce-once"></i>
-        </span>
+              </span>
 
-      </div>
-      </div>
-      <div class="group mx-auto">
-  <!-- Image -->
-      <div class="rounded-3xl border-2 border-[#ffffff14] bg-[#141414]  p-5">
-        <img class="w-full rounded-3xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-105" src="./img/portfoli-img-2.jpg" alt="Portfolio-Image">
-      </div>
-  <!-- Title + Icon -->
-      <div class="flex items-center justify-between py-5">
-        <span class="relative">
-          <h2 class="text-2xl font-semibold mt-3 relative pb-1">
-            My work is driven by the belief that thoughtful.
-            <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
-          </h2>
-          <p class="text-gray-300">Development App</p>
-        </span>
-        <span class=" border-2 border-[#ffffff14] p-2 rounded-lg inline-block overflow-hidden">
-              <i class="fa-solid fa-arrow-up-right-from-square text-2xl 
+            </div>
+          </div>
+          <div class="group mx-auto">
+            <!-- Image -->
+            <div class="rounded-3xl border-2 border-[#ffffff14] bg-[#141414]  p-5">
+              <img
+                class="w-full rounded-3xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-105"
+                src="./img/portfoli-img-2.jpg" alt="Portfolio-Image">
+            </div>
+            <!-- Title + Icon -->
+            <div class="flex items-center justify-between py-5">
+              <span class="relative">
+                <h2 class="text-2xl font-semibold mt-3 relative pb-1">
+                  My work is driven by the belief that thoughtful.
+                  <span
+                    class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
+                </h2>
+                <p class="text-gray-300">Development App</p>
+              </span>
+              <span class=" border-2 border-[#ffffff14] p-2 rounded-lg inline-block overflow-hidden">
+                <i class="fa-solid fa-arrow-up-right-from-square text-2xl 
             transition-colors duration-300 group-hover:text-red-500
             animate-bounce-once"></i>
-        </span>
+              </span>
 
-      </div>
-      </div>
-      <div class="group mx-auto">
-  <!-- Image -->
-      <div class="rounded-3xl border-2 border-[#ffffff14] bg-[#141414]  p-5">
-        <img class="w-full rounded-3xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-105" src="./img/portfoli-img-3.jpg" alt="Portfolio-Image">
-      </div>
-  <!-- Title + Icon -->
-      <div class="flex items-center justify-between py-5">
-        <span class="relative">
-          <h2 class="text-2xl font-semibold mt-3 relative pb-1">
-            In this portfolio, you’ll find a curated selection
-            <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
-          </h2>
-          <p class="text-gray-300">Web Design</p>
-        </span>
-        <span class=" border-2 border-[#ffffff14] p-2 rounded-lg inline-block overflow-hidden">
-              <i class="fa-solid fa-arrow-up-right-from-square text-2xl 
+            </div>
+          </div>
+          <div class="group mx-auto">
+            <!-- Image -->
+            <div class="rounded-3xl border-2 border-[#ffffff14] bg-[#141414]  p-5">
+              <img
+                class="w-full rounded-3xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-105"
+                src="./img/portfoli-img-3.jpg" alt="Portfolio-Image">
+            </div>
+            <!-- Title + Icon -->
+            <div class="flex items-center justify-between py-5">
+              <span class="relative">
+                <h2 class="text-2xl font-semibold mt-3 relative pb-1">
+                  In this portfolio, you’ll find a curated selection
+                  <span
+                    class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
+                </h2>
+                <p class="text-gray-300">Web Design</p>
+              </span>
+              <span class=" border-2 border-[#ffffff14] p-2 rounded-lg inline-block overflow-hidden">
+                <i class="fa-solid fa-arrow-up-right-from-square text-2xl 
             transition-colors duration-300 group-hover:text-red-500
             animate-bounce-once"></i>
-        </span>
+              </span>
 
-      </div>
-      </div>
-      <div class="group mx-auto">
-  <!-- Image -->
-      <div class="rounded-3xl border-2 border-[#ffffff14] bg-[#141414]  p-5">
-        <img class="w-full rounded-3xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-105" src="./img/portfoli-img-1.jpg" alt="Portfolio-Image">
-      </div>
-  <!-- Title + Icon -->
-      <div class="flex items-center justify-between py-5">
-        <span class="relative">
-          <h2 class="text-2xl font-semibold mt-3 relative pb-1">
-            I’ve had the privilege of working with various
-            <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
-          </h2>
-          <p class="text-gray-300">App Development</p>
-        </span>
-        <span class=" border-2 border-[#ffffff14] p-2 rounded-lg inline-block overflow-hidden">
-              <i class="fa-solid fa-arrow-up-right-from-square text-2xl 
+            </div>
+          </div>
+          <div class="group mx-auto">
+            <!-- Image -->
+            <div class="rounded-3xl border-2 border-[#ffffff14] bg-[#141414]  p-5">
+              <img
+                class="w-full rounded-3xl overflow-hidden transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-105"
+                src="./img/portfoli-img-1.jpg" alt="Portfolio-Image">
+            </div>
+            <!-- Title + Icon -->
+            <div class="flex items-center justify-between py-5">
+              <span class="relative">
+                <h2 class="text-2xl font-semibold mt-3 relative pb-1">
+                  I’ve had the privilege of working with various
+                  <span
+                    class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-500 group-hover:w-full"></span>
+                </h2>
+                <p class="text-gray-300">App Development</p>
+              </span>
+              <span class=" border-2 border-[#ffffff14] p-2 rounded-lg inline-block overflow-hidden">
+                <i class="fa-solid fa-arrow-up-right-from-square text-2xl 
             transition-colors duration-300 group-hover:text-red-500
             animate-bounce-once"></i>
-        </span>
+              </span>
 
-      </div>
-      </div>
-<!--curd  div End-->
-      </div>
-    </section>
-  <!--Portfolio  Section End-->
+            </div>
+          </div>
+          <!--curd  div End-->
+        </div>
+      </section>
+      <!--Portfolio  Section End-->
+
+      <!--Education  Section Start-->
+      <section class="pb-10 bg-black text-white">
+        <div class="w-1/2 flex mx-auto text-center py-5">
+          <div>
+            <p class="text-red-600 font-semibold uppercase">Education & Experience</p>
+            <h2 class="text-white text-5xl font-bold py-2">Empowering Creativity through</h2>
+            <p class="text-gray-300">Business consulting consultants provide expert advice and guida businesses to help
+              them improve their performance, efficiency, and organizational</p>
+          </div>
+        </div>
+        <!--curd  div Start-->
+
+        <div class="w-[90%] mx-auto ">
+          <div class="py-5 flex gap-5 items-center">
+            <h2 class="text-3xl font-semibold">Experiences</h2>
+            <img class="w-[90px] h-[6px] opacity-60" src="./img/custom-line.png" alt="">
+          </div>
+          <div class="grid grid-flow-col grid-rows-2 gap-5">
+            <div class="bg-[#141414] rounded-3xl p-5 service">
+              <h2 class="font-semibold text-xl">Trainer Marketing</h2>
+              <h3 class="font-bold pb-2">2005-2009</h3>
+              <p class="text-gray-300 ">A personal portfolio is a curated collection of an individual's professional
+                work, showcasing their skills, experience A personal portfolio.</p>
+            </div>
+            <div class="bg-[#141414] rounded-3xl p-5 service">
+              <h2 class="font-semibold text-xl">Design Assisant</h2>
+              <h3 class="font-bold pb-2">2009-20012</h3>
+              <p class="text-gray-300">I’ve had the privilege of working with various clients, from startups to
+                established companies, helping bring their visions to life.!</p>
+            </div>
+            <div class="bg-[#141414] rounded-3xl p-5 service">
+              <h2 class="font-semibold text-xl">Assisant Director</h2>
+              <h3 class="font-bold pb-2">2009-20012</h3>
+              <p class="text-gray-300">Each project here showcases my commitment to excellence and adaptability,
+                tailored to meet each client’s unique needs.</p>
+            </div>
+            <div class="bg-[#141414] rounded-3xl p-5 service">
+              <h2 class="font-semibold text-xl">Design Assisant</h2>
+              <h3 class="font-bold pb-2">2009-20012</h3>
+              <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est sed
+                placeat fugit voluptas ipsa delectus doloremque repudiandae voluptatem iste!</p>
+            </div>
+          </div>
+        </div>
+        <!--curd  div End-->
+      </section>
+      <!--Education  Section End-->
+
+
+<!--Education  Section Start-->
+      <section class="pb-10 bg-black text-white">
+        <!--curd  div Start-->
+        <div class="w-[90%] mx-auto ">
+          <div class="py-5 flex gap-5 items-center">
+            <h2 class="text-3xl font-semibold">Experiences</h2>
+            <img class="w-[90px] h-[6px] opacity-60" src="./img/custom-line.png" alt="">
+          </div>
+
+          <div class="flex items-center gap-5">
+            <div class="flex-1 grid grid-flow-col grid-rows-2 gap-10">
+              <div class="">
+                <h3 class="font-semibold text-red-600">Experience</h3>
+                  <h2 class="font-bold text-xl">Soft Tech (2 Years)</h2>
+                  <h3 class="font-semibold pb-2">UI/UX Designer</h3>
+                  <p class="text-gray-300 ">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br> desi dolore eu fugiat nulla pariatu Duis aute irure.</p>
+              </div>
+              <div class="">
+                <h3 class="font-semibold text-red-600">Experience</h3>
+                <h2 class="font-bold text-xl">ModernTech (3 Years)</h2>
+                <h3 class="font-semibold pb-2">App Developer</h3>
+                <p class="text-gray-300">In this portfolio, you’ll find a curated selection of projects that <br> highlight my skills in [Main Areas, e.g., responsive web design.</p>
+              </div>
+            </div>
+            <div class="flex-1  experience rounded-2xl">
+              <img class="h-[300px]" src="./img/jhid-book.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!--curd  div End-->
+      </section>
+<!--Education  Section End-->
 
 
 
-  </main>
+      <!--Pricing  Section Start-->
+      <section class="pb-10 bg-black text-white">
+        <div class="w-1/2 flex mx-auto text-center py-5">
+          <div>
+            <p class="text-red-600 font-semibold uppercase">My Price plan</p>
+            <h2 class="text-white text-5xl font-bold py-2">Enhancing Collaboration between Remote</h2>
+          </div>
+        </div>
+        <!--curd  div Start-->
+        <div class="w-[90%] mx-auto ">
+          <div class="flex  gap-5 justify-center items-center">
+            <div class="bg-[#141414] rounded-3xl p-5 service flex-1 ">
+              <p class="font-semibold">Starter</p>
+              <h2 class="font-bold text-4xl py-1">$ 5.00</h2>
+              <p class="font-semibold pb-5 border-b border-gray-800">Per Month</p>
+
+              <ul class="pt-6">
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">5 Social Media Account</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">Free Platform Access</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">24/7 Customer Support</p>
+                </li>
+              </ul>
+              <button class="border text-white px-6 py-2.5 rounded-lg inline-flex duration-700 items-center gap-2 mt-8">
+                <span>Get Started</span>
+                <i class="fa-solid fa-arrow-right hide"></i>
+              </button>
+            </div>
+            <div class="bg-[#141414] rounded-3xl p-5 service flex-1 h-auto">
+              <p class="font-semibold">Starter</p>
+              <h2 class="font-bold text-4xl py-1">$ 5.00</h2>
+              <p class="font-semibold pb-5 border-b border-gray-800">Per Month</p>
+
+              <ul class="pt-6">
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">5 Social Media Account</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">Free Platform Access</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">24/7 Customer Support</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">24/7 Customer Support</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">24/7 Customer Support</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">24/7 Customer Support</p>
+                </li>
+              </ul>
+              <button class="border text-white px-6 py-2.5 rounded-lg inline-flex duration-700 items-center gap-2 mt-8">
+                <span>Get Started</span>
+                <i class="fa-solid fa-arrow-right hide"></i>
+              </button>
+            </div>
+            <div class="bg-[#141414] rounded-3xl p-5 service flex-1">
+              <p class="font-semibold">Starter</p>
+              <h2 class="font-bold text-4xl py-1">$ 5.00</h2>
+              <p class="font-semibold pb-5 border-b border-gray-800">Per Month</p>
+
+              <ul class="pt-6">
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">5 Social Media Account</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">Free Platform Access</p>
+                </li>
+                <li class="flex items-center gap-2 py-2">
+                  <i
+                    class="fa-solid fa-check text-[10px] text-black flex items-center justify-center w-5 h-5 bg-red-900 rounded-full"></i>
+                  <p class="text-gray-300">24/7 Customer Support</p>
+                </li>
+              </ul>
+              <button class="border text-white px-6 py-2.5 rounded-lg inline-flex duration-700 items-center gap-2 mt-8">
+                <span>Get Started</span>
+                <i class="fa-solid fa-arrow-right hide"></i>
+              </button>
+            </div>
+          </div>
+          <!--curd  div End-->
+      </section>
+      <!--Pricing  Section End-->
+
+      <!--Contact  Section start-->
+
+      <section class="py-20 bg-black ">
+        <div class=" contact-main w-[90%] mx-auto bg-[#141414] p-5 rounded-xl flex items-center justify-center service">
+          <div class="flex justify-center gap-5 items-center mx-auto ">
+            <div class="p-5">
+              <p class="text-red-600 font-semibold uppercase">My Price plan</p>
+              <h2 class="text-white text-3xl font-bold py-1">Enhancing Collaboration between Remote</h2>
+              <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente eveniet
+                error itaque dolorem recusandae.</p>
+            </div>
+            <div class="contact justify-center p-5 w-[65%]">
+              <form id="contact-form">
+                <input type="hidden" name="access_key" value="2d0ab314-4862-4f0e-a723-c5f115ac60c3">
+                <input name="Name" class="rounded-xl text-sm text-white" type="text" placeholder="Your Name">
+                <input name="Email" class="rounded-xl text-sm text-white" type="text" placeholder="Your Email">
+                <input name="Phone Number" class="rounded-xl text-sm text-white" type="text" placeholder="Phone Number">
+                <input name="Subject" class="rounded-xl text-sm text-white" type="text" placeholder="Subject">
+                <textarea name="Message" class="text-sm text-white" placeholder="Your Massage" name="" id=""></textarea>
+                <button type="submit"
+                  class="bg-red-900  text-white py-3 my-4 rounded-lg inline-flex items-center gap-2 w-[545px] justify-center">
+                  <span class="text-center">View Portfolio</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <p>j.i.jahid90@gmail.com</p>
+      <p>jahidulislam30190@gmail.com</p>
+
+    </main>
+
+    <script>
+      const form = document.getElementById("contact-form")
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        // result.innerHTML = "Please wait..."
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        })
+          .then(async (response) => {
+            let json = await response.json();
+            
+            console.log({json})
+          })
+          .catch(error => {
+            console.log(error);
+            // result.innerHTML = "Something went wrong!";
+          })
+          .then(function () {
+            form.reset();
+            setTimeout(() => {
+              // result.style.display = "none";
+            }, 3000);
+          });
+      });
+    </script>
 </body>
+
 </html>
